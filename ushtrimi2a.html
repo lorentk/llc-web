@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" type="image/png" href="img/iclllogo.png"/>
+        <link rel="shortcut icon" type="image/png" href="http://example.com/favicon.png"/>    
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" href="main-style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+<script>
+function toggle(){
+    if(document.getElementById("side-bar").style.display == 'none'){
+        document.getElementById('side-bar').style.display = 'block';
+        document.getElementById('content').style.width = '80%';
+    }else{
+        document.getElementById('side-bar').style.display = 'none';
+         document.getElementById('content').style.width = '100%';
+    }  
+    
+
+}
+
+</script>
+        </head>
+    <body>
+        <!---main container-->
+        <div class="container">
+ </li></a>
+            <div class="side-bar" id="side-bar">
+                <div class="title">
+                    <h2>Llampa IC</h2>
+                </div> 
+                
+                 <ul class="menu-list">
+                    <a href="ushtrimi2a.html"><li>Home</li></a>
+                    <a href="about.html" ><li> About Us</li></a>
+                    <a href="mission.html" ><li> Mission</li></a>
+                    <a href="contact.html" ><li> Contact</li></a>
+                 </ul>
+                 
+            </div>
+            <!--######--content-------######-->
+            <div class="content" id="content" >
+                <!---Toggle button-->
+                <button onclick="toggle()">
+                        <i class="fas fa-bars"></i>
+                </button>
+                <!--end of toggle button-->
+                <div class="head-title">
+                        <h1>Llampa</h1>
+                        <h2>Innovation Center</h2>
+
+                </div>
+            <div class="slider">
+                <button class="btn">Apliko tani!</button>
+                <figure>
+                    <img src="img/slide0.jpg">
+                    <img src="img/slide1.jpg">
+                    <img src="img/slide2.jpg">
+                    <img src="img/slide0.jpg">
+                    <img src="img/slide2.jpg">
+                </figure>
+                
+
+                </div>
+                <div class="2nd-con">
+                    
+                </div>
+            </div>
+            <!---end of content-->
+
+        </div>
+        <!--end of main-container-->
+    </body>
+</html>

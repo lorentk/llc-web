@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="shortcut icon" type="image/png" href="img/iclllogo.png"/>
+            <link rel="shortcut icon" type="image/png" href="http://example.com/favicon.png"/>    
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+            <link rel="stylesheet" href="main-style.css">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie-edge">
+            <style>
+    .container{
+        width:100%;
+        height:100vh;
+        display: inline;
+    }
+    body{
+        margin:0px;
+    }
+    .side-bar{
+        width:20%;
+        height: 100vh;
+        float:left;
+        display: block;
+
+    }
+    .content{
+        width:80%;
+        height: 100vh;
+        background-color: gainsboro;
+        float:left;
+    }  
+    .content button{
+        margin:10px;
+        border:none;
+        font-size: xx-large;
+        color:gray;
+    }  
+    .menu-list{
+        list-style-type: none;
+        margin-top:50px;
+    }
+    .menu-list li{
+        width:100%;
+        padding:10px;
+        font-weight: bold;
+    
+    }
+    .menu-list li:hover{
+        background-color:grey;
+        color:white;    
+    }
+</style>
+<script>
+function toggle(){
+    if(document.getElementById("side-bar").style.display == 'none'){
+        document.getElementById('side-bar').style.display = 'block';
+        document.getElementById('content').style.width = '80%';
+    }else{
+        document.getElementById('side-bar').style.display = 'none';
+         document.getElementById('content').style.width = '100%';
+    }
+    
+
+}
+
+</script>
+        </head>
+    <body>
+        <div class="container">
+                <div class="side-bar" id="side-bar">
+                        <div class="title">
+                            <h2>Llampa IC</h2>
+                        </div> 
+                        
+                         <ul class="menu-list">
+                            <a href="ushtrimi2a.html"><li>Home</li></a>
+                            <a href="about.html" ><li> About Us</li></a>
+                            <a href="mission.html" ><li> Mission</li></a>
+                            <a href="contact.html" ><li> Contact</li></a>
+                         </ul>
+                         
+                    </div>
+            <div class="content" id="content" >
+                <button onclick="toggle()">
+                        <i class="fas fa-bars"></i>
+                </button>
+                      <h3>THis is a test</h3>
+                
+            </div>
+        </div>
+    </body>
+</html>
